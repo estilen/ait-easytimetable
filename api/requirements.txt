@@ -1,0 +1,6 @@
+requests==2.17.3
+flask==1.0.2
+flask-restplus==0.12.1
+bs4==0.0.1
+lxml==4.2.4
+gunicorn==19.9.0

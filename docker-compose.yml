@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+
+    api:
+      restart: always
+      volumes:
+        - "~/timetables:/var/lib/easytimetable/timetables"
+      build: ./api
+      ports:
+        - 8000
+      command: gunicorn --bind 0.0.0.0:8000 wsgi:app
+
+    proxy:
+      container_name: nginx
+      restart: always
+      build: ./nginx
+      ports:
+        - 80:80
+      depends_on:
+        - api
+
+volumes:
+  timetables:
