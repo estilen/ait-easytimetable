@@ -1,5 +1,6 @@
 requests>=2.20.0
 flask==1.0.2
+flask_cors==3.0.7
 flask-restplus==0.12.1
 bs4==0.0.1
 lxml==4.2.4
