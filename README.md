@@ -1,6 +1,8 @@
 # ait-easytimetable
 RESTful API built with Flask to provide an interface to AthloneIT class timetables.
 
+The API is currently deployed to a Digital Ocean droplet.
+
 ## Usage
 
 To request a timetable, you will need to send a GET request to the API, with the relevant course code as a `course_code` parameter. The URL structure should be as follows:

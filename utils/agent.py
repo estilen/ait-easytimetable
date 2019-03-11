@@ -74,9 +74,7 @@ class Timetable:
 
     def _parse_room_number(self, room):
         match = re.match(r"[A-Z]\d{2,4}", room)
-        if match:
-            room = match.group(0)
-        return room
+        return room if not match else match.group(0)
 
     def _parse_daily_timetable(self, data):
         """Extract data for individual modules."""

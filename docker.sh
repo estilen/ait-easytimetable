@@ -2,4 +2,4 @@
 
 docker-compose down
 docker-compose build
-docker-compose up -d --scale api=5
+docker-compose up -d --scale api=3
